@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>История любви</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="loader">
+
+<div class="loader-heart">❤</div>
+
+<div class="loader-text">
+Загрузка любви...
+</div>
+
+</div>
+
+
+
+<audio id="bgMusic" loop>
+<source src="sounds/music.mp3" type="audio/mp3">
+</audio>
+
+
+<nav>
+<div>К+В</div>
+<div>
+<a href="index.html">Главная</a>
+<a href="love.html">История любви</a>
+<a href="pets.html">Питомцы</a>
+</div>
+</nav>
+
+<div class="container">
+
+<div class="story-block">
+<div class="story-text">
+Когда то, где то, далеко, далеко появилась на свет, маленькая принцесса, которая даже не подозревала, что ее будущий парень, молодой человек, будущий муж это все один человек и он уже тоже давно родился.
+</div>
+<div class="story-img">
+<img src="img/1.jpg">
+</div>
+</div>
+
+<div class="story-block reverse">
+<div class="story-text">
+А вот и я мальчик красавчик, на тот момент я даже представить не мог что мне так сильно повезет с девочкой, девушкой, будущей женой, принцессой и это будет один человек.
+</div>
+<div class="story-img">
+<img src="img/2.jpg">
+</div>
+</div>
+
+<div class="story-block">
+<div class="story-text">
+Это не просто леденая горка! Это именно то, что нас с тобой связало. Мы на ней хоть и не катались, но все равно именно рядом с ней наши жизни изменились на всегда.
+</div>
+<div class="story-img">
+<img src="img/090620.png">
+</div>
+</div>
+
+<div class="story-block reverse">
+<div class="story-text">
+Узнали лучше друг друга мы в школе, переписывались целыми днями и таким образом начали встречаться :)
+</div>
+<div class="story-img">
+<img src="img/3.jpg">
+</div>
+</div>
+
+<div class="story-block ">
+<div class="story-text">
+Мы с тобой часто видились, гуляли, сидели у тебя, но всегда хотелось быть рядом еще дольше. Наши отношения быстро начали сближаться все сильнее и сильнее. Тут я уже понимал, что наши отношения навсегда.
+</div>
+<div class="story-img">
+<img src="img/4.jpg">
+</div>
+</div>
+
+<div class="story-block reverse">
+<div class="story-text">
+И вот школа подошла к концу, я поступил в ВУЗ. Ты закончила школу на год раньше меня, и приняла решения ждать меня. Ты у меня большой молодец, зря время не теряла и научилась делать афигенные ногти. И вот мы уже переезжаем в оренбург... Тут наша с тобой жизнь заиграла совершенно новыми, невообразимыми красками.
+</div>
+<div class="story-img">
+<img src="img/5.jpg">
+</div>
+</div>
+
+<div class="story-block ">
+<div class="story-text">
+В Оренбурге у нас появилась личная, взрослая, долгожданная, счастливая жизнь.
+</div>
+<div class="story-img">
+<img src="img/6.jpg">
+</div>
+</div>
+
+<div class="story-block reverse">
+<div class="story-text">
+Романтика
+</div>
+<div class="story-img">
+<img src="img/7.jpg">
+</div>
+</div>
+
+<div class="story-block ">
+<div class="story-text">
+Встречать с тобой новый год, это прекрасно, уютно, мило, романтично, весело и по настоящему.
+</div>
+<div class="story-img">
+<img src="img/8.jpg">
+</div>
+</div>
+
+<div class="story-block reverse">
+<div class="story-text">
+Каждый момент с тобой особенный...
+</div>
+<div class="story-img">
+<img src="img/9.jpg">
+</div>
+</div>
+
+<div class="story-block ">
+<div class="story-text">
+Я люблю тебя, девочка моя
+</div>
+<div class="story-img">
+<img src="img/10.jpg">
+</div>
+</div>
+
+<div class="story-block reverse">
+<div class="story-text">
+И это только начало...
+</div>
+<div class="story-img">
+<img src="img/11.jpg">
+</div>
+</div>
+
+</div>
+
+<footer>
+К+В © Вся любовь защищена
+</footer>
+
+
+<script>
+
+let music = document.getElementById("bgMusic");
+
+document.addEventListener("click", function(){
+
+if(music.paused){
+
+music.volume = 0.3;
+music.play();
+
+}
+
+});
+
+</script>
+
+<script>
+
+window.addEventListener("load", function(){
+
+let loader=document.getElementById("loader");
+
+loader.style.opacity="0";
+
+setTimeout(()=>{
+loader.style.display="none";
+},1000);
+
+});
+
+</script>
+
+
+
+</body>
+</html>

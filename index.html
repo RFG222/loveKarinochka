@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Наша любовь</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="loader">
+
+<div class="loader-heart">❤</div>
+
+<div class="loader-text">
+Загрузка любви...
+</div>
+
+</div>
+
+
+<audio id="bgMusic" loop>
+<source src="sounds/music.mp3" type="audio/mp3">
+</audio>
+
+
+<nav>
+<div>К+В</div>
+<div>
+<a href="index.html">Главная</a>
+<a href="love.html">История любви</a>
+<a href="pets.html">Питомцы</a>
+</div>
+</nav>
+
+<div class="banner">
+09.06.20
+</div>
+
+<div class="container">
+
+<p>
+Цветочек мой, поздравляю тебя с днем влюблённых. Я тебя безумно люблю, ценю, уважаю и никому не отдам.
+</p>
+
+<center>
+<a class="button" onclick="startGame()">Играть</a>
+</center>
+
+<div id="game" class="game-container">
+
+<h2 id="question"></h2>
+
+<img id="img1">
+<img id="img2">
+
+<div>
+<button id="btn1" class="answer-btn"></button>
+<button id="btn2" class="answer-btn"></button>
+</div>
+
+</div>
+
+<p>
+Правила игры: Отвечай верно на все вопросы и я пойму на сколько сильно ты ценишь наши моменты.
+</p>
+
+</div>
+
+<footer>
+К+В © Вся любовь защищена
+</footer>
+
+<script src="js/game.js"></script>
+
+<script>
+
+let music = document.getElementById("bgMusic");
+
+document.addEventListener("click", function(){
+
+if(music.paused){
+
+music.volume = 0.3;
+music.play();
+
+}
+
+});
+
+</script>
+
+<script>
+
+window.addEventListener("load", function(){
+
+let loader=document.getElementById("loader");
+
+loader.style.opacity="0";
+
+setTimeout(()=>{
+loader.style.display="none";
+},1000);
+
+});
+
+</script>
+
+
+</body>
+</html>

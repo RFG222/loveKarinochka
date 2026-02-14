@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Питомец</title>
+
+<link rel="stylesheet" href="css/pet.css">
+
+</head>
+<body>
+
+<div id="loader">
+
+<div class="loader-heart">❤</div>
+
+<div class="loader-text">
+Загрузка любви...
+</div>
+
+</div>
+
+
+<audio id="bgMusic" loop>
+<source src="sounds/music.mp3" type="audio/mp3">
+</audio>
+
+
+
+<!-- маленькое фото -->
+<img id="petSmall" class="pet-small">
+
+
+<!-- контейнер -->
+<div class="game-container">
+
+<img id="scene" class="scene">
+
+<div id="buttons"></div>
+
+<button class="back-btn" onclick="goBack()">Назад</button>
+
+</div>
+
+
+<script src="js/pet.js"></script>
+
+<script>
+
+let music = document.getElementById("bgMusic");
+
+document.addEventListener("click", function(){
+
+if(music.paused){
+
+music.volume = 0.3;
+music.play();
+
+}
+
+});
+
+</script>
+
+
+<script>
+
+window.addEventListener("load", function(){
+
+let loader=document.getElementById("loader");
+
+loader.style.opacity="0";
+
+setTimeout(()=>{
+loader.style.display="none";
+},1000);
+
+});
+
+</script>
+
+
+</body>
+</html>

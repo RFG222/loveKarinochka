@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Питомцы</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="loader">
+
+<div class="loader-heart">❤</div>
+
+<div class="loader-text">
+Загрузка любви...
+</div>
+
+</div>
+
+
+<audio id="bgMusic" loop>
+<source src="sounds/music.mp3" type="audio/mp3">
+</audio>
+
+
+<nav>
+<div>К+В</div>
+<div>
+<a href="index.html">Главная</a>
+<a href="love.html">История любви</a>
+<a href="pets.html">Питомцы</a>
+</div>
+</nav>
+
+<div class="container">
+
+<div class="story-block">
+<div class="story-text">
+Наш любимый питомец Люся. Она родилась примерно в то время, когда строились Египетские пирамиды. Она была рабом, но в скоре ее забрала к себе Кариночка. Люся сначала ее не признала, но потом они были не разлей вода. Из за безграничной любви, Кариночка в порыве эмоций откусило ухо Люсе.
+<br><br>
+<a class="button" onclick="selectPet('pet1')">Выбрать</a>
+</div>
+<div class="story-img">
+<img src="img/pet1.jpg">
+</div>
+</div>
+
+<div class="story-block reverse">
+<div class="story-text">
+Еще один любимец Кира. Она родилась не так давно, но Люсю поганять уже успела. Кирочка девочка красивая, но может заиграться и откусить палец. Надеюсь Люсе второе ухо не откусит.
+<br><br>
+<a class="button" onclick="selectPet('pet2')">Выбрать</a>
+</div>
+<div class="story-img">
+<img src="img/pet2.jpg">
+</div>
+</div>
+
+</div>
+
+<footer>
+К+В © Вся любовь защищена
+</footer>
+
+<script>
+
+function selectPet(pet){
+
+// сохраняем выбранного питомца
+localStorage.setItem("selectedPet", pet);
+
+// переходим на страницу игры
+window.location.href = "pet.html";
+
+}
+
+</script>
+
+<script>
+
+function selectPet(pet){
+
+localStorage.setItem("selectedPet", pet);
+
+window.location.href = "pet.html";
+
+}
+
+</script>
+
+
+<script>
+
+let music = document.getElementById("bgMusic");
+
+document.addEventListener("click", function(){
+
+if(music.paused){
+
+music.volume = 0.3;
+music.play();
+
+}
+
+});
+
+</script>
+
+<script>
+
+window.addEventListener("load", function(){
+
+let loader=document.getElementById("loader");
+
+loader.style.opacity="0";
+
+setTimeout(()=>{
+loader.style.display="none";
+},1000);
+
+});
+
+</script>
+
+
+
+</body>
+</html>
