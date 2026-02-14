@@ -1,3 +1,73 @@
+/* ========== МОБИЛЬНАЯ АДАПТАЦИЯ ========== */
+@media (max-width: 768px) {
+    
+    /* Навигация */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    nav a {
+        margin: 10px 0 0 0;
+        font-size: 18px; /* больше шрифт для пальцев */
+    }
+
+    /* Баннер */
+    .banner {
+        font-size: 32px; /* уменьшаем, чтобы не выходило за экран */
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    /* Контент */
+    .container {
+        padding: 30px 15px;
+    }
+
+    /* История блок */
+    .story-block {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .story-text {
+        font-size: 18px; /* читаемо на телефоне */
+    }
+
+    /* Изображения */
+    .story-img img,
+    #img1,
+    #img2 {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Кнопки */
+    .button,
+    .answer-btn {
+        width: 100%;
+        padding: 15px 0;
+        font-size: 18px;
+    }
+
+    /* Баннер сердцебиение / плавность */
+    .banner {
+        line-height: 1.2;
+    }
+
+    /* Подвал */
+    footer {
+        padding: 20px 10px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
 /* Общие настройки */
 * {
     margin: 0;
@@ -384,4 +454,7 @@ color:#e8aeb7;
 100%{transform:scale(1);}
 
 }
+
+
+
 
